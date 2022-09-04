@@ -1,0 +1,144 @@
+@import url(fonts.css);
+
+body {
+    font-family: 'Libre', sans-serif;
+}
+
+header {
+    height: 768px;
+    background-image: url(./images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.beige {
+    background-color: #FFFAF2;
+}
+
+.picture {
+    background-image: url(./images/Profile\ Picture.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 340px;
+}
+
+.progress-bar {
+    background-color: #C66C49;
+}
+
+.dropdown {
+    display: none;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 350px 255px;
+    grid-template-rows: 145px 89px 145px;
+    column-gap: 30px;
+    row-gap: 5px;
+
+}
+
+.pic1 {
+    background-image: url(./images/Rectangle.png);
+    grid-column: 1 /2;
+    grid-row: 1 / 2;
+}
+
+.pic2 {
+    background-image: url(./images/Rectangle2.png);
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.pic3 {
+    background-image: url(./images/dom-luis-bridge-porto-carol-japp.png);
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.pic4 {
+    background-image: url(./images/Rectangle3.png);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    height: 528px;
+}
+
+@media screen and (max-width:645px) {
+    header {
+        height: 275px;
+        background-position: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .padding {
+        padding: 20px !important;
+    }
+
+    .picture {
+        width: 100%;
+        height: 218px;
+        background-size: cover;
+
+    }
+
+    .fs-1 {
+        font-size: 20px !important;
+    }
+
+    .fs-4 {
+        font-size: 13px !important;
+    }
+
+    .margin {
+        margin: 0 !important;
+    }
+
+    .fs-6 {
+        font-size: 12px !important;
+    }
+
+    .fs-5 {
+        font-weight: 900 !important;
+        font-size: 24px !important;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 170px 124px;
+        grid-template-rows: 70px 43px 70px;
+        column-gap: 15px;
+        row-gap: 5px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    footer {
+        height: 360px;
+    }
+}
